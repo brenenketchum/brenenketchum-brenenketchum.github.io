@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: 'Aquire';
+  src: url('Aquire.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.aquireFont {
+  font-family: 'Aquire', sans-serif;
+}
 /*!
 * Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2023 Start Bootstrap
