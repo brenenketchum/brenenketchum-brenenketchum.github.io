@@ -2793,7 +2793,7 @@ textarea.form-control-lg {
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: #212529;
-  --bs-btn-bg: transparent;
+  --bs-btn-bg: white;
   --bs-btn-border-width: 0.125rem;
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: 0.5rem;
@@ -3747,7 +3747,7 @@ textarea.form-control-lg {
 
 .navbar {
   --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-padding-y: 0rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
@@ -7690,6 +7690,10 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -10989,8 +10993,8 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
