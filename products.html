@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | BK Robotics</title>
+    <link rel="icon" type="image/x-icon" href="TransparentLogo.ico" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 100px;  /* Prevents content from overlapping the fixed navbar */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #mainNav {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            height: 100px;
+        }
+        #mainNav img {
+            max-width: 50px;
+        }
+        #mainNav .navbar-brand {
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        .page-section-heading {
+            padding-bottom: 10px;
+        }
+        .page-header {
+            text-align: center;
+            margin-top: 20px;  /* Adds space between the navbar and heading */
+            margin-bottom: -10px; /* Adds space below the heading */
+        }
+        #products-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            margin: 10px 0 5px;
+        }
+        .product-description {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #966fd6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <img class="masthead-avatar" src="TransparentLogo-modified.png" alt="BK Robotics Logo" />
+            <a class="navbar-brand aquireFont" href="index.html">BK Robotics</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container page-header">
+        <h2 class="page-section-heading text-uppercase text-secondary mb-0 aquireFont">Our Products</h2>
+        <p>Explore our range of custom control panels and automation solutions.</p>
+    </div>
+
+    <!-- Product List Section -->
+    <section id="products-list" class="container">
+        <div class="product-card">
+            <img src="Motor on-off.PNG" alt="Motor On/Off Control Panel" />
+            <h3 class="product-title">Motor On/Off Control Panel</h3>
+            <p class="product-description">Simple and robust motor control with safety features and easy integration.</p>
+            <p class="product-price">3 motors: $1,500</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Motor on-off hmi.PNG" alt="Motor On/Off Control Panel with HMI" />
+            <h3 class="product-title">Motor On/Off Control Panel with HMI</h3>
+            <p class="product-description">Includes an intuitive HMI for user-friendly motor control and monitoring.</p>
+            <p class="product-price">5 motors: $3,200</p>
+        </div>
+
+        <div class="product-card">
+            <img src="motor vfd.PNG" alt="Motor Control Panel with VFD" />
+            <h3 class="product-title">Motor Control Panel with VFD</h3>
+            <p class="product-description">Variable Frequency Drive for precise speed control and energy efficiency.</p>
+            <p class="product-price">3 motors: $3,700</p>
+        </div>
+
+        <div class="product-card">
+            <img src="remote IO.PNG" alt="Remote I/O Control Panel" />
+            <h3 class="product-title">Remote I/O Control Panel</h3>
+            <p class="product-description">Expand your automation capabilities with remote input/output modules.</p>
+            <p class="product-price">Base: $1,500</p>
+            <p class="product-price">Add ons starting at: $150</p>
+        </div>
+
+        <div class="product-card-container">
+            <div class="product-card">
+                <h3 class="product-title">Custom Panel</h3>
+                <p class="product-description">Don't see what you're looking for? Contact us and we'll make it happen at an affordable price.</p>
+                <div class="text-center mt-4">
+                    <a
+                        class="btn btn-xl btn-outline-secondary"
+                        href="https://forms.gle/xqsboRGBntF515aq7"
+                        target="_blank"
+                        onclick="redirectToThankYou()"
+                    >
+                        Get Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
